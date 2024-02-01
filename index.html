@@ -1,0 +1,51 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <form id="form">
+      <div class="form-wrapper">
+        <div class="input-container">
+          <h2>CALCULADORA</h2>
+
+          <label for="value1" class="lbl1">Número 1: </label>
+          <input
+            class="input1"
+            type="number"
+            id="value1"
+            autofocus
+            placeholder="Escribe un número"
+          />
+
+          <label for="value2" class="lbl2">Número 2: </label>
+          <input
+            type="number"
+            class="input2"
+            id="value2"
+            placeholder="Escribe otro número"
+          />
+          <p>EL RESULTADO ES:</p>
+          <input id="result" type="text" class="screen" />
+          <button type="button" id="clearBtn" class="center">
+            Limpiar campos
+          </button>
+          <button type="button" id="divideBtn" class="center">Dividir</button>
+        </div>
+
+        <div class="btn-container">
+          <button type="button" id="addBtn" class="center">Sumar</button>
+          <button type="button" id="subtractBtn" class="center">Restar</button>
+          <button type="button" id="multiplyBtn" class="center">
+            Multiplicar
+          </button>
+        </div>
+      </div>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>
